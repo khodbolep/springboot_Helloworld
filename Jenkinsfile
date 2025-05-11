@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.8.5'   // Change to match your Maven name in Jenkins
+        maven 'Maven 3.9.9'   // Change to match your Maven name in Jenkins
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-username/your-repo-name.git'
+                git branch: 'main', url: 'https://github.com/khodbolep/springboot_Helloworld.git'
             }
         }
 
